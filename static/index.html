@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/tablesorter.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <meta charset="UTF-8">
+    <title>Phone</title>
+</head>
+<body>
+<h1 align="center">Phone Directory v2</h1>
+
+<div id="tableHolder" align="center">
+    <table align="center" class="tablesorter">
+        <thead>
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Ext</th>
+            <th>Dept</th>
+            <th>Number</th>
+        </tr>
+        </thead>
+        {{range .Phones}}
+
+        <tr>
+            <td>{{.First}}</td>
+            <td>{{.Last}}</td>
+            <td>{{.Ext}}</td>
+            <td>{{.Dept}}</td>
+            <td>{{.Number}}</td>
+        </tr>
+        {{end}}
+        <tr>
+            <td>fake</td>
+            <td>name</td>
+            <td>1111</td>
+            <td>wat</td>
+            <td>914-476-0812</td>
+        </tr>
+        <tr>
+            <td>fake</td>
+            <td>name</td>
+            <td>1111</td>
+            <td>wat</td>
+            <td>914-476-0812</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        $("table").tablesorter();
+    });
+</script>
+</html>

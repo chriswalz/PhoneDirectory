@@ -1,0 +1,6 @@
+if go install  ; then
+   echo "success"
+   /Users/chris/Documents/Projects/GoProjects/bin/${PWD##*/}
+else
+	echo "fail"
+fi

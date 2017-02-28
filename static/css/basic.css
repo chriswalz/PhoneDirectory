@@ -1,0 +1,35 @@
+
+table {
+    color: #333; /* Lighten up font color */
+    font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+    width: 640px;
+    border-collapse:
+            collapse; border-spacing: 0;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+    background: #F3F3F3; /* Light grey background */
+    font-weight: bold; /* Make sure they're bold */
+    cursor: pointer;
+}
+
+td {
+    background: #FAFAFA; /* Lighter grey background */
+    text-align: center; /* Center our text */
+}
+
+
+
+#tableHolder {
+    height: 200px;
+    overflow-y: auto;
+}
+body {
+    margin-left:auto;
+    margin-right:auto;
+}
+#tableHolder, body {
+    max-width:800px;
+}
