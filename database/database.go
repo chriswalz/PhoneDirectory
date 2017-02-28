@@ -18,6 +18,7 @@ var db *sql.DB
 
 func Prepare() {
 	var err error
+	// "root:PASSWORDGOESHERE@tcp(127.0.0.1:3306)/DATABASENAME"
 	db, err = sql.Open("mysql", dsn)
 	handlerError(err)
 }
