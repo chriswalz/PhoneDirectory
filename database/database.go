@@ -18,7 +18,7 @@ var db *sql.DB
 
 func Prepare() {
 	var err error
-	db, err = sql.Open("mysql", "root:testpassword@tcp(127.0.0.1:3306)/hello")
+	db, err = sql.Open("mysql", dsn)
 	handlerError(err)
 }
 
